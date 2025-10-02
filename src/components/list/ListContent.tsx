@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useSearchParams } from "react-router";
+import { Link, useSearchParams } from "react-router";
 import { getJobs } from "../../services/JobService";
 import type { IJob } from "../../models/IJob";
 import placeholder from "../../assets/placeholder.svg";
@@ -7,7 +7,6 @@ import { formatDate } from "../../helpers/dateHelper";
 
 import {
   DigiLayoutMediaObject,
-  DigiLink,
   DigiList,
   DigiMediaImage,
   DigiTypography,
@@ -56,13 +55,13 @@ export const ListContent = () => {
                 afAlt={j.logo_url ? j.employer?.name : "Placeholder image"}
               />
               <DigiTypography afVariation={TypographyVariation.SMALL}>
-                <DigiLink
-                  afHref={`/jobs/${j.id}?search=${encodeURIComponent(
+                <Link
+                  to={`/jobs/${j.id}?search=${encodeURIComponent(
                     searchText
                   )}`}
                 >
                   <h3>{j.headline}</h3>
-                </DigiLink>
+                </Link>
                 <p>{j.occupation.label}</p>
                 <p>
                   Publicerad {formatDate(j.publication_date) ?? "Datum saknas"}
