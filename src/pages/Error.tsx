@@ -1,10 +1,9 @@
 import {
-  DigiLinkInternal,
   DigiNotificationErrorPage,
 } from "@digi/arbetsformedlingen-react";
 import { ErrorPageStatusCodes } from "@digi/arbetsformedlingen";
 import { useState, useEffect } from "react";
-import { useRouteError } from "react-router";
+import { Link, useRouteError } from "react-router";
 
 export const Error = () => {
   const error = useRouteError();
@@ -42,9 +41,9 @@ export const Error = () => {
     <DigiNotificationErrorPage afHttpStatusCode={statusCode}>
       <ul slot="links">
         <li>
-          <DigiLinkInternal afHref="/" afVariation="small">
+          <Link to="/">
             Till startsidan
-          </DigiLinkInternal>
+          </Link>
         </li>
       </ul>
     </DigiNotificationErrorPage>
