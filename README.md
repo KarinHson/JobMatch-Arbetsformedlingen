@@ -113,6 +113,6 @@ Thank you to my group for great teamwork, making this project a fun learning exp
 
 ## 📝 Authors
 
-[Karin Henriksson](@KarinHson)
-[Jennifer Nilsson](@ynnxj)
-[Alicia Skogblad](@skogblad)
+[Karin Henriksson](https://github.com/KarinHson)
+[Jennifer Nilsson](https://github.com/ynnxj)
+[Alicia Skogblad](https://github.com/skogblad)
