@@ -58,7 +58,6 @@ This website includes several key features:
 
 Here are some screenshots from the site:
 
-![Example](/example.jpg)
 ![Start page on desktop](https://github.com/user-attachments/assets/882aed78-bda6-4def-a413-3b46299052b8)
 ![Search results on mobile](https://github.com/user-attachments/assets/4dd8114a-dc5d-4e3b-8e4d-a5c79fbcfae8)
 ![Job ad on tablet](https://github.com/user-attachments/assets/8f49981f-649f-48f9-9181-b81f4da00ece)
